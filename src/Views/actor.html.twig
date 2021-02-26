@@ -1,0 +1,13 @@
+{% extends "template.html.twig" %}
+{% block title %}{{actors.prenom}} {{actors.nom}}{% endblock %}
+{% block body %}
+<h1 class="mt-5">{{actors.prenom}} {{actors.nom}}</h1>
+	<ul>
+		<li>Né le : {{actors.naissance}}</li>
+		<li>Films réalisés:</li>
+	</ul>
+	<img class="avatar" src="{{baseUrl}}/assets/img/avatar.png" width="300px" alt="avatar">
+	<p>
+		{{actors.biographie}}
+	</p>
+{% endblock %}
